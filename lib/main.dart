@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mod3_kel15/screens/home.dart';
+import 'package:mod3_kel15/screens/splashscreen.dart';
 import 'screens/detail.dart';
-import 'screens/home.dart';
 
 void main() async {
   runApp(const AnimeApp());
@@ -16,7 +16,8 @@ class AnimeApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => const HomePage(),
+        '/': (context) => const SplashScreenPage(),
+        '/home': (context) => const HomePage(),
         '/detail': (context) => const DetailPage(item: 0, title: ''),
       },
     );
