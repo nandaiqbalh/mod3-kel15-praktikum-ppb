@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:mod3_kel15/screens/DetailManga.dart';
+import 'package:mod3_kel15/screens/ListManga.dart';
+import 'package:mod3_kel15/screens/Profile.dart';
 import 'package:mod3_kel15/screens/home.dart';
 import 'package:mod3_kel15/screens/splashscreen.dart';
-import 'screens/detail.dart';
 
 void main() async {
   runApp(const AnimeApp());
@@ -18,7 +20,9 @@ class AnimeApp extends StatelessWidget {
       routes: {
         '/': (context) => const SplashScreenPage(),
         '/home': (context) => const HomePage(),
-        '/detail': (context) => const DetailPage(item: 0, title: ''),
+        '/list': (context) => const ListMangaPage(),
+        '/detail': (context) => const DetailMangaPage(item: 0, title: ''),
+        '/profile': (context) => const ProfilePage(),
       },
     );
   }
